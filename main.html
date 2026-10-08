@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Chidubem Onwuchuluba — AI Engineer & Software Developer</title>
-    <meta name="description" content="AI & software engineer building multi-agent LLM systems, distributed backends and cloud infrastructure. M.S. CS student at Georgia State University seeking 2026 internships.">
+    <title>Chidubem Onwuchuluba | Backend & Applied AI Engineer</title>
+    <meta name="description" content="Chidubem Onwuchuluba is a backend and applied AI engineer. Payment APIs at Paystack, a production real estate platform on AWS, and agentic AI systems with A2A, MCP and the OpenAI Agents SDK. M.S. CS at Georgia State.">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.chidubemo.com/">
-    <meta property="og:title" content="Chidubem Onwuchuluba — AI Engineer & Software Developer">
-    <meta property="og:description" content="AI & software engineer: multi-agent systems (A2A + MCP), APIs serving 2M+ daily transactions at Paystack, HackATL finalist. M.S. CS at Georgia State.">
-    <meta property="og:image" content="image1.jpeg">
+    <meta property="og:title" content="Chidubem Onwuchuluba | Backend & Applied AI Engineer">
+    <meta property="og:description" content="Backend & applied AI engineer: agentic systems (A2A + MCP), payment APIs at Paystack, adversarial ML research. M.S. CS at Georgia State.">
+    <meta property="og:image" content="https://www.chidubemo.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chidubem Onwuchuluba — AI Engineer & Software Developer">
-    <meta name="twitter:description" content="AI Engineer specializing in Machine Learning, Cloud Infrastructure, and Scalable Systems.">
-    <meta name="twitter:image" content="image1.jpeg">
+    <meta name="twitter:title" content="Chidubem Onwuchuluba | Backend & Applied AI Engineer">
+    <meta name="twitter:description" content="Backend & applied AI engineer: agentic systems, payment APIs, adversarial ML research.">
+    <meta name="twitter:image" content="https://www.chidubemo.com/og-image.jpg">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230a0a0a'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='white'>CO</text></svg>">
 
@@ -30,7 +32,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Chidubem Onwuchuluba",
-      "jobTitle": "AI Engineer & Software Developer",
+      "jobTitle": "Backend & Applied AI Engineer",
       "url": "https://www.chidubemo.com/",
       "email": "chidubemonwuchuluba1@gmail.com",
       "sameAs": [
@@ -267,6 +269,7 @@
         .hero-sub b { color: var(--ink); font-weight: 600; }
         .hero-ctas { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
         .hero-cmd { display: flex; align-items: center; gap: .4rem; margin-top: 1.25rem; font-size: .8125rem; color: var(--muted); }
+        @media (hover: none) { .hero-cmd { display: none; } }
 
         .prev { margin-top: 3rem; display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1.5rem; }
         .prev-label { font-family: var(--mono); font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
@@ -586,8 +589,69 @@
         .agent-col.right .ag::after { right: 100%; }
         .ag.on::after { border-top-color: var(--ink); }
 
+        /* CodeLens stacked windows */
+        .stage-ide .browser { left: 5%; top: 9%; width: 74%; }
+        .stage-ide .browser .browser-shot { aspect-ratio: 1800 / 1238; }
+        .stage-ide .win-2 { left: auto; top: auto; right: 4%; bottom: 7%; width: 54%; }
+        .stage-ide .win-2 .browser-shot { aspect-ratio: 1800 / 969; }
+
+        /* Face-auth diagram extras */
+        .agents .edges.attack use { stroke: var(--ink); stroke-dasharray: 2 5; stroke-width: 1.5; opacity: .8; }
+        .agents .face circle:first-child { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+        .agents .face .eye { fill: var(--ink); }
+        .agents .face path { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; }
+
+        /* Code reviewer terminal */
+        .rev-term {
+            position: absolute; left: 7%; right: 7%; top: 9%; bottom: 9%;
+            background: var(--terminal); color: #e5e5e5; border-radius: 14px;
+            border: 1px solid rgba(255,255,255,.08); box-shadow: var(--shadow-lg);
+            font-family: var(--mono); overflow: hidden; display: flex; flex-direction: column;
+        }
+        .rev-term .term-bar span { font-size: 1.6cqw; }
+        .rev-body { padding: 2.4cqw 2.8cqw; font-size: 1.95cqw; line-height: 1.75; white-space: nowrap; overflow: hidden; }
+        .rev-body .p { color: #fafafa; }
+        .rev-body .dim { color: #737373; }
+        .rev-body .ok { color: #4ade80; }
+        .rev-body .hi { color: #0a0a0a; background: #e5e5e5; border-radius: 4px; padding: 0 .5cqw; font-size: .9em; }
+        .rev-body b { color: #fff; }
+        .cr .rev-body > * { opacity: 0; transition: opacity .4s var(--ease); transition-delay: calc(var(--d) * 1ms + 400ms); }
+        .cr.in .rev-body > * { opacity: 1; }
+
+        /* More projects */
+        .more-head { margin: clamp(56px, 8vw, 96px) 0 1.25rem; }
+        .more-head h3 { font-family: var(--display); font-weight: 700; font-size: 1.5rem; color: var(--ink); letter-spacing: -0.02em; }
+        .more-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .mini { overflow: hidden; display: flex; flex-direction: column; transition: transform .4s var(--ease), box-shadow .4s var(--ease); }
+        .mini:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .mini-img { aspect-ratio: 16 / 8; overflow: hidden; background: var(--bg-2); border-bottom: 1px solid var(--line); position: relative; }
+        .mini-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .6s var(--ease); }
+        .mini:hover .mini-img img { transform: scale(1.04); }
+        .mini-body { padding: 1.25rem 1.4rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
+        .mini-body h4 { margin-top: .4rem; font-family: var(--display); font-weight: 700; font-size: 1.25rem; color: var(--ink); letter-spacing: -0.02em; line-height: 1.2; }
+        .mini-body p { margin-top: .6rem; font-size: .9375rem; }
+        .mini-body .p-links { margin-top: auto; padding-top: 1.25rem; }
+
+        /* Research */
+        .research { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; align-items: start; }
+        .pubs { padding: 1.5rem 1.75rem; }
+        .pub-list { list-style: none; margin-top: .5rem; }
+        .pub { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+        .pub:last-child { border-bottom: 0; padding-bottom: 0; }
+        .pub-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .4rem .75rem; font-family: var(--mono); font-size: .6875rem; color: var(--muted); letter-spacing: .02em; }
+        .pub-kind { display: inline-flex; align-items: center; gap: .4rem; padding: .15rem .55rem; border-radius: 6px; background: var(--ink); color: var(--bg); letter-spacing: .06em; text-transform: uppercase; }
+        .pub-kind.ongoing { background: var(--bg-2); color: var(--ink); }
+        .pub h3 { margin-top: .6rem; font-family: var(--display); font-weight: 700; font-size: 1.1875rem; line-height: 1.3; color: var(--ink); letter-spacing: -0.015em; }
+        .pub-authors { margin-top: .35rem; font-size: .875rem; }
+        .pub-authors b { color: var(--ink); font-weight: 600; }
+        .award { overflow: hidden; }
+        .award-stage { aspect-ratio: 16 / 10; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; }
+        .award-body { padding: 1.4rem 1.5rem 1.5rem; }
+        .award-body .p-title { font-size: 1.75rem; }
+        .award-body p { margin-top: .6rem; font-size: .9375rem; }
+
         /* ---------- Skills ---------- */
-        .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
         .skill-group { padding: 1.35rem 1.35rem 1.5rem; }
         .skill-group h3 { font-family: var(--display); font-weight: 700; font-size: 1.0625rem; color: var(--ink); letter-spacing: -0.01em; margin-bottom: 1rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
         .tools { list-style: none; display: flex; flex-wrap: wrap; gap: .45rem; }
@@ -602,7 +666,8 @@
         .tool img { width: 22px; height: 22px; padding: 2px; border-radius: 6px; background: #fff; }
         .tool.t { padding-left: .7rem; background: var(--bg-2); border-color: transparent; font-weight: 400; color: var(--ink-2); }
         .tool.t:hover { border-color: var(--line-2); }
-        .tool small { font-size: .6875rem; color: var(--muted); font-weight: 400; }
+        .tool { flex-wrap: wrap; row-gap: 0; }
+        .tool small { font-size: .6875rem; color: var(--muted); font-weight: 400; white-space: nowrap; }
 
         /* ---------- Education ---------- */
         .degrees { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -653,6 +718,12 @@
         .cert-body { padding: .85rem 1rem 1rem; }
         .cert-name { font-weight: 600; color: var(--ink); font-size: .9375rem; line-height: 1.3; }
         .cert-issuer { font-size: .75rem; color: var(--muted); margin-top: .2rem; }
+        .has-verify { position: relative; }
+        .has-verify .cert-body { padding-bottom: 2.25rem; }
+        .cert-verify { position: absolute; left: 1rem; bottom: .9rem; display: inline-flex; align-items: center; gap: .25rem; font-size: .75rem; font-weight: 600; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; transition: transform .4s var(--ease); }
+        .cert-verify .icon { width: .85em; height: .85em; }
+        .has-verify:hover .cert { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .has-verify:hover .cert-verify { transform: translateY(-4px); }
 
         /* ---------- Contact ---------- */
         .contact {
@@ -770,6 +841,13 @@
         /* =========================================================
            RESPONSIVE
            ========================================================= */
+        @media (min-width: 1680px) {
+            :root { --wrap: 1320px; }
+        }
+        @media (min-width: 901px) {
+            .project { align-items: start; }
+            .project .stage { position: sticky; top: 100px; }
+        }
         @media (max-width: 1080px) {
             .nav-links a { padding: .5rem .6rem; }
             .logo-text { display: none; }
@@ -800,12 +878,16 @@
             .b-now, .b-clock { grid-column: 1 / -1; }
             .project { grid-template-columns: 1fr; }
             .project:nth-child(even) .stage { order: 0; }
+            .research, .more-grid { grid-template-columns: 1fr; }
             .degrees { grid-template-columns: 1fr; }
             .certs { grid-template-columns: repeat(2, 1fr); }
             .contact { grid-template-columns: 1fr; }
         }
         @media (max-width: 560px) {
             .cmd-btn { display: none; }
+            .tests-chip { display: none; }
+            .project .stage { margin-inline: calc(-1 * clamp(16px, 4vw, 40px)); border-radius: 0; border-left: 0; border-right: 0; }
+            .project .agents { left: 1%; width: 98%; top: 2%; height: 96%; }
             .hero h1 { font-size: 2.5rem; }
             .hero-ctas .btn { flex: 1; }
             .hero-cmd { display: none; }
@@ -823,6 +905,8 @@
             .cert-img { height: 130px; padding: 8px; }
             .certs li.feat .cert-img { height: 190px; }
             .cert-body { padding: .7rem .75rem .8rem; }
+            .has-verify .cert-body { padding-bottom: 2rem; }
+            .cert-verify { left: .75rem; bottom: .75rem; }
             .cert-name { font-size: .8125rem; }
             .b-bio { padding: 1.5rem; }
             .mail-btn { width: 100%; }
@@ -874,18 +958,19 @@
 
     <!-- ================= NAV ================= -->
     <nav class="nav" id="nav" aria-label="Main">
-        <a href="#top" class="logo" aria-label="Chidubem Onwuchuluba — home">
+        <a href="#top" class="logo" aria-label="Chidubem Onwuchuluba, home">
             <span class="logo-mark">CO</span><span class="logo-text">Chidubem O.</span>
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
         </ul>
         <div class="nav-tools">
-            <button class="icon-btn cmd-btn" id="cmdOpen" aria-label="Open command menu"><kbd>⌘</kbd><kbd>K</kbd></button>
+            <button class="icon-btn cmd-btn" id="cmdOpen" aria-label="Open command menu"><kbd class="mod-key">⌘</kbd><kbd>K</kbd></button>
             <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                 <svg class="icon moon"><use href="#i-moon"/></svg><svg class="icon sun"><use href="#i-sun"/></svg>
             </button>
@@ -902,16 +987,16 @@
         <header class="hero" id="top">
             <div class="wrap hero-grid">
                 <div class="hero-anim">
-                    <span class="chip"><span class="pulse" aria-hidden="true"></span>Available for 2026 internships<span class="sep" aria-hidden="true"></span>Atlanta, GA</span>
-                    <p class="hello">Hi, I'm Chidubem Onwuchuluba —</p>
+                    <span class="chip"><span class="pulse" aria-hidden="true"></span>Backend &amp; applied AI engineer<span class="sep" aria-hidden="true"></span>Atlanta, GA</span>
+                    <p class="hello">Hi, I'm Chidubem Onwuchuluba.</p>
                     <h1>I build <span class="hl">intelligent systems</span> that scale.</h1>
-                    <p class="hero-sub">AI engineer and M.S. Computer Science student at <b>Georgia State</b>. I build multi-agent LLM systems, the backends that serve them, and the cloud infrastructure that keeps them running — from payment APIs handling <b>2M+ daily transactions</b> to agent networks talking over A2A and MCP.</p>
+                    <p class="hero-sub">Backend and applied AI engineer, and M.S. Computer Science student at <b>Georgia State</b>. I've built payment APIs at <b>Paystack</b>, run a production real estate platform on AWS, and shipped agentic AI systems with A2A, MCP and the OpenAI Agents SDK.</p>
                     <div class="hero-ctas">
                         <a href="#projects" class="btn btn-primary">See my work <svg class="icon"><use href="#i-arrow-r"/></svg></a>
                         <!-- UPDATE this path if you rename/move your resume -->
-                        <a href="cv.pdf" download class="btn btn-ghost"><svg class="icon"><use href="#i-download"/></svg> Download résumé</a>
+                        <a href="Master_Resume.pdf" download class="btn btn-ghost"><svg class="icon"><use href="#i-download"/></svg> Download résumé</a>
                     </div>
-                    <p class="hero-cmd">Tip: press <kbd>⌘</kbd><kbd>K</kbd> to jump anywhere</p>
+                    <p class="hero-cmd">Tip: press <kbd class="mod-key">⌘</kbd><kbd>K</kbd> to jump anywhere</p>
                     <div class="prev">
                         <span class="prev-label">Worked with</span>
                         <ul class="prev-list"><li>Paystack</li><li>Rotawn Energy</li><li>Georgia State</li></ul>
@@ -920,9 +1005,9 @@
 
                 <div class="hero-visual" aria-hidden="true">
                     <div class="float f1"><span class="float-ico"><svg class="icon"><use href="#i-trophy"/></svg></span><span>HackATL 2025<small>Finalist · team LunaTek</small></span></div>
-                    <div class="float f2"><span class="float-ico"><svg class="icon"><use href="#i-bolt"/></svg></span><span>2M+ tx / day<small>APIs @ Paystack</small></span></div>
+                    <div class="float f2"><span class="float-ico"><svg class="icon"><use href="#i-bolt"/></svg></span><span>Payment APIs @ Paystack<small>Platform: 2M+ tx / day</small></span></div>
                     <div class="terminal">
-                        <div class="term-bar"><i></i><i></i><i></i><span>~/chidubem — zsh</span></div>
+                        <div class="term-bar"><i></i><i></i><i></i><span>~/chidubem · zsh</span></div>
                         <div class="term-body" id="term"></div>
                     </div>
                 </div>
@@ -932,8 +1017,8 @@
         <!-- ================= MARQUEE ================= -->
         <div class="marquee" aria-hidden="true">
             <div class="marquee-track">
-                <ul><li>Multi-Agent Systems</li><li>Python</li><li>A2A + MCP</li><li>Go</li><li>Distributed Systems</li><li>Kubernetes</li><li>AWS</li><li>Azure</li><li>Machine Learning</li><li>PostgreSQL</li><li>C#</li><li>CI/CD</li></ul>
-                <ul><li>Multi-Agent Systems</li><li>Python</li><li>A2A + MCP</li><li>Go</li><li>Distributed Systems</li><li>Kubernetes</li><li>AWS</li><li>Azure</li><li>Machine Learning</li><li>PostgreSQL</li><li>C#</li><li>CI/CD</li></ul>
+                <ul><li>Multi-Agent Systems</li><li>Python</li><li>A2A + MCP</li><li>Kubernetes</li><li>AWS</li><li>Azure</li><li>Machine Learning</li><li>PostgreSQL</li><li>C#</li><li>CI/CD</li></ul>
+                <ul><li>Multi-Agent Systems</li><li>Python</li><li>A2A + MCP</li><li>Kubernetes</li><li>AWS</li><li>Azure</li><li>Machine Learning</li><li>PostgreSQL</li><li>C#</li><li>CI/CD</li></ul>
             </div>
         </div>
 
@@ -942,34 +1027,34 @@
             <div class="wrap">
                 <div class="sec-head reveal">
                     <div><span class="eyebrow">01 / About</span><h2 class="sec-title" id="about-title">Turning ideas into<br>working systems.</h2></div>
-                    <p class="sec-desc">Master's student and software engineer focused on AI agents, backend systems and the cloud underneath them.</p>
+                    <p class="sec-desc">Engineer, researcher and teaching assistant at Georgia State.</p>
                 </div>
 
                 <div class="bento">
                     <figure class="card b-photo reveal">
-                        <img src="image1.jpeg" alt="Chidubem smiling while working on a laptop" loading="lazy" width="1071" height="1280">
+                        <img src="image1.jpeg" alt="Headshot of Chidubem Onwuchuluba" loading="lazy" width="1069" height="1600">
                         <figcaption><span class="pulse" aria-hidden="true"></span>Usually found shipping something</figcaption>
                     </figure>
 
                     <div class="card b-bio reveal">
-                        <p class="big">I'm an engineer who likes the whole stack of an AI product — <span>the agents, the APIs, and the infrastructure.</span></p>
-                        <p>I'm a <strong>Master's Computer Science student</strong> at Georgia State University, concentrating in Machine Learning and Software Engineering. Lately I've been building <strong>multi-agent LLM systems</strong> — agents that delegate to each other over A2A and reach their tools over MCP — with the same testing and reliability discipline I'd apply to any backend.</p>
-                        <p>At <strong>Paystack</strong> I designed and shipped RESTful APIs in C#, Go and Python serving 2M+ daily payment transactions, owned containerized microservices on Kubernetes across AWS and Azure, and took on-call. I also build and operate a production real estate data platform on Django, PostgreSQL and AWS.</p>
-                        <p>Currently seeking <strong>software engineering and AI/ML internships for 2026</strong> where I can help build intelligent, high-performance systems that solve real-world problems.</p>
+                        <p class="big">Backend and applied AI engineer. <span>I build the agents, the APIs, and the infrastructure underneath.</span></p>
+                        <p>I'm an <strong>M.S. Computer Science student</strong> at Georgia State University on the thesis track, concentrating in Machine Learning and Software Engineering. Most of what I build sits behind the interface: multi-agent systems that talk to each other over <strong>A2A</strong> and reach their tools through <strong>MCP</strong>, a <strong>Django</strong> and <strong>PostgreSQL</strong> platform on AWS, and payment APIs written in <strong>C#</strong> and <strong>Python</strong>.</p>
+                        <p>On the research side, I work on adversarial machine learning, attacking and defending the face authentication pipelines used in digital KYC, and I've co-authored two papers on adversarial defenses.</p>
+                        <p>I also teach: I support 110+ undergraduates in Computer Organization Programming and run thesis-formatting workshops for graduate students, for which I built an automated format-compliance checker.</p>
                     </div>
 
                     <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-cap"/></svg></span><div><div class="stat-num" data-count="3.92" data-dec="2">3.92</div><div class="stat-lbl">Graduate GPA</div></div></div>
-                    <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-bolt"/></svg></span><div><div class="stat-num" data-count="2" data-suffix="M+">2M+</div><div class="stat-lbl">Daily transactions served</div></div></div>
-                    <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-check"/></svg></span><div><div class="stat-num" data-count="287">287</div><div class="stat-lbl">Tests in my agent network</div></div></div>
-                    <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-users"/></svg></span><div><div class="stat-num" data-count="50" data-suffix="K+">50K+</div><div class="stat-lbl">Merchants on systems I built</div></div></div>
+                    <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-bolt"/></svg></span><div><div class="stat-num" data-count="45" data-prefix="−" data-suffix="%">−45%</div><div class="stat-lbl">API response time at Paystack</div></div></div>
+                    <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-code"/></svg></span><div><div class="stat-num" data-count="4">4</div><div class="stat-lbl">AI agent systems built</div></div></div>
+                    <div class="card b-stat reveal"><span class="ico"><svg class="icon"><use href="#i-search"/></svg></span><div><div class="stat-num" data-count="0.997" data-dec="3">0.997</div><div class="stat-lbl">AUROC on adversarial inputs</div></div></div>
 
                     <div class="card b-now reveal">
                         <span class="card-label"><span class="pulse" aria-hidden="true"></span>Right now</span>
                         <ul class="now-list">
-                            <li><span class="dot"></span><span><b>Building</b> multi-agent systems with the OpenAI Agents SDK, A2A and MCP.</span></li>
-                            <li><span class="dot"></span><span><b>Teaching</b> 110+ students as a Graduate TA in Computer Organization Programming at GSU.</span></li>
-                            <li><span class="dot"></span><span><b>Studying</b> for my M.S. in Computer Science — 3.92 GPA, graduating Dec 2027.</span></li>
-                            <li><span class="dot"></span><span><b>Looking</b> for software engineering and AI/ML internships for 2026.</span></li>
+                            <li><span class="dot"></span><span><b>Building</b> agentic systems with the OpenAI Agents SDK, A2A and MCP, plus tools like CodeLens for assessing how engineers work with AI.</span></li>
+                            <li><span class="dot"></span><span><b>Researching</b> adversarial defenses for face authentication pipelines.</span></li>
+                            <li><span class="dot"></span><span><b>Teaching</b> 110+ students at GSU and running thesis-formatting workshops for graduate students.</span></li>
+                            <li><span class="dot"></span><span><b>Studying</b> for my M.S. in Computer Science (3.92 GPA, thesis track).</span></li>
                         </ul>
                     </div>
 
@@ -977,7 +1062,7 @@
                         <span class="card-label"><svg class="icon" style="width:14px;height:14px"><use href="#i-pin"/></svg>Atlanta, Georgia</span>
                         <div>
                             <div class="clock" id="clock">--:--<small>EST</small></div>
-                            <p class="clock-sub">My local time · open to remote roles</p>
+                            <p class="clock-sub">My local time</p>
                         </div>
                         <svg class="globe" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width=".8"><circle cx="50" cy="50" r="46"/><ellipse cx="50" cy="50" rx="20" ry="46"/><ellipse cx="50" cy="50" rx="36" ry="46"/><path d="M4 50h92M9 30h82M9 70h82"/></g></svg>
                     </div>
@@ -990,7 +1075,7 @@
             <div class="wrap">
                 <div class="sec-head reveal">
                     <div><span class="eyebrow">02 / Experience</span><h2 class="sec-title" id="experience-title">Where I've worked.</h2></div>
-                    <p class="sec-desc">From payments infrastructure to the classroom — building things people rely on.</p>
+                    <p class="sec-desc">From payments infrastructure to the classroom: building things people rely on.</p>
                 </div>
 
                 <div class="timeline" id="timeline">
@@ -1000,15 +1085,35 @@
                         <span class="job-logo" aria-hidden="true">GSU</span>
                         <article class="card job-card">
                             <div class="job-top">
-                                <div><div class="job-co">Georgia State University</div><h3 class="job-role">Graduate Teaching Assistant</h3></div>
-                                <span class="job-date now"><span class="pulse"></span>Aug 2025 — Present</span>
+                                <div><div class="job-co">Georgia State University</div><h3 class="job-role">Graduate Assistant</h3></div>
+                                <span class="job-date now"><span class="pulse"></span>Aug 2025 – Present</span>
                             </div>
                             <ul class="points">
-                                <li>Built Python automation scripts for grading and lab administration serving 110+ students in Computer Organization Programming.</li>
-                                <li>Mentor students through office hours and 1-on-1 debugging sessions; configure Linux/Windows lab environments and resolve system-level issues.</li>
+                                <li>Teach and support 110+ undergraduates in Computer Organization Programming: running labs, debugging student code and configuring Linux/Windows lab environments.</li>
+                                <li>Wrote Python automation scripts that streamlined grading and lab administration, freeing time for one-on-one student support.</li>
+                                <li>Design and lead thesis and dissertation formatting workshops for graduate students across the College of Arts and Sciences, translating APA and ASA template requirements into plain, step-by-step guidance.</li>
+                                <li>Built and shipped a thesis/dissertation format-compliance checker: a deterministic two-tier design (XML-structural checks plus PDF-rendered geometry) backed by a manifest of 48 verified evidence checks, with mandatory LibreOffice rendering so every finding is visually verified, and wrapped it in a FastAPI app so students can self-check before submission.</li>
                             </ul>
-                            <ul class="wins"><li class="win"><b>110+</b> students</li><li class="win"><b>95%</b> satisfaction</li><li class="win"><b>−30%</b> grading time</li></ul>
-                            <ul class="tags"><li class="tag">Python</li><li class="tag">Linux</li><li class="tag">Assembly</li><li class="tag">Automation</li><li class="tag">Mentoring</li></ul>
+                            <ul class="wins"><li class="win"><b>110+</b> students</li><li class="win"><b>95%</b> satisfaction</li><li class="win"><b>−70%+</b> review time</li><li class="win"><b>94%</b> checker accuracy</li><li class="win"><b>48</b> evidence checks</li></ul>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">LibreOffice</li><li class="tag">XML / PDF</li><li class="tag">Linux</li><li class="tag">Teaching</li></ul>
+                        </article>
+                    </li>
+                    <li class="job reveal">
+                        <span class="job-logo" aria-hidden="true">PS</span>
+                        <article class="card job-card">
+                            <div class="job-top">
+                                <div><div class="job-co">Paystack <span class="job-note">· YC W16, a Stripe company</span></div><h3 class="job-role">Software Engineer</h3></div>
+                                <span class="job-date">May 2024 – Aug 2025</span>
+                            </div>
+                            <ul class="points">
+                                <li>Built and optimized RESTful APIs in a platform processing 2M+ daily transactions at 99.9% uptime; implemented a Redis caching layer that cut response time by 45%.</li>
+                                <li>Contributed to a multi-tenant SaaS architecture serving 50,000+ merchants, building containerized microservices on Docker and Kubernetes.</li>
+                                <li>Improved CI/CD pipelines on Jenkins and GitLab CI, raising deployment frequency by 60% with zero-downtime blue-green releases.</li>
+                                <li>Profiled slow queries across high-throughput payment flows and reduced p99 latency through index tuning and query restructuring.</li>
+                                <li>Worked in C# alongside Python across a mixed AWS and Azure footprint, collaborating with PMs and cross-functional teams from requirements through production.</li>
+                            </ul>
+                            <ul class="wins"><li class="win"><b>2M+</b> daily transactions</li><li class="win"><b>99.9%</b> uptime</li><li class="win"><b>−45%</b> response time</li><li class="win"><b>+60%</b> deploy frequency</li><li class="win"><b>50K+</b> merchants</li></ul>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">C#</li><li class="tag">Redis</li><li class="tag">Docker</li><li class="tag">Kubernetes</li><li class="tag">AWS</li><li class="tag">Azure</li><li class="tag">Jenkins</li><li class="tag">GitLab CI</li></ul>
                         </article>
                     </li>
                     <li class="job reveal">
@@ -1016,33 +1121,28 @@
                         <article class="card job-card">
                             <div class="job-top">
                                 <div><div class="job-co">Rotawn Energy</div><h3 class="job-role">Software Engineering Intern</h3></div>
-                                <span class="job-date">Jan 2025 — Aug 2025</span>
+                                <span class="job-date">Jan 2024 – May 2024</span>
                             </div>
                             <ul class="points">
-                                <li>Gathered requirements from operations stakeholders and shipped a Visitor Management web app with QR-based authentication and SMS notifications.</li>
-                                <li>Replaced manual reporting with JavaScript data-visualization dashboards, including a requisition and expenses tracker.</li>
-                                <li>Maintained high availability through proactive monitoring and automated backups.</li>
+                                <li>Built data visualization dashboards for requisition and expense tracking, enabling real-time reporting that contributed to a 3% cost reduction in 6 months.</li>
+                                <li>Developed and deployed a Visitor Management web app with QR-based authentication and SMS notifications, cutting manual processing time by 40%.</li>
+                                <li>Maintained 99.5% uptime through proactive monitoring with AWS CloudWatch, database query optimization and automated backup pipelines.</li>
                             </ul>
-                            <ul class="wins"><li class="win"><b>−40%</b> manual processing time</li><li class="win"><b>15+ hrs</b> staff time saved / week</li><li class="win"><b>99.5%</b> uptime</li><li class="win"><b>−3%</b> operational costs</li></ul>
-                            <ul class="tags"><li class="tag">Python</li><li class="tag">Django</li><li class="tag">JavaScript</li><li class="tag">Chart.js</li><li class="tag">QR / SMS</li></ul>
+                            <ul class="wins"><li class="win"><b>−3%</b> costs in 6 months</li><li class="win"><b>−40%</b> manual processing</li><li class="win"><b>99.5%</b> uptime</li></ul>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">Django</li><li class="tag">JavaScript</li><li class="tag">Chart.js</li><li class="tag">AWS CloudWatch</li></ul>
                         </article>
                     </li>
-                    <li class="job reveal">
-                        <span class="job-logo" aria-hidden="true">PS</span>
+                                        <li class="job reveal">
+                        <span class="job-logo" aria-hidden="true"><svg class="icon"><use href="#i-cap"/></svg></span>
                         <article class="card job-card">
                             <div class="job-top">
-                                <div><div class="job-co">Paystack <span class="job-note">· YC W16, Interswitch Group</span></div><h3 class="job-role">Software Engineering Intern</h3></div>
-                                <span class="job-date">Jun 2024 — Dec 2024</span>
+                                <div><div class="job-co">Self-directed</div><h3 class="job-role">Independent Study &amp; Certifications</h3></div>
+                                <span class="job-date">May 2023 – Dec 2023</span>
                             </div>
                             <ul class="points">
-                                <li>Partnered with product managers and cross-functional teams to define requirements, then designed, built and tested RESTful APIs in C#, Go and Python for payment processing.</li>
-                                <li>Added a Redis caching layer with explicit TTL/invalidation over PostgreSQL — faster responses with correct payment-state reads.</li>
-                                <li>Owned containerized microservices end-to-end on Docker and Kubernetes across hybrid AWS and Azure, from design review to production rollout.</li>
-                                <li>As on-call engineer, improved reliability and observability with CloudWatch dashboards and alerting.</li>
-                                <li>Introduced zero-downtime blue-green deploys on Jenkins and GitLab CI; reviewed code across the C#/Go/Python codebase.</li>
+                                <li>After graduating, focused on building new skills full time, working through courses in machine learning and full-stack web development and earning certifications.</li>
                             </ul>
-                            <ul class="wins"><li class="win"><b>2M+</b> daily transactions</li><li class="win"><b>99.9%</b> availability</li><li class="win"><b>−45%</b> response time</li><li class="win"><b>+60%</b> deploy frequency</li><li class="win"><b>50K+</b> merchants</li></ul>
-                            <ul class="tags"><li class="tag">C#</li><li class="tag">Go</li><li class="tag">Python</li><li class="tag">Redis</li><li class="tag">PostgreSQL</li><li class="tag">Docker</li><li class="tag">Kubernetes</li><li class="tag">AWS</li><li class="tag">Azure</li><li class="tag">Jenkins</li><li class="tag">GitLab CI</li><li class="tag">CloudWatch</li></ul>
+                            <ul class="tags"><li class="tag">Machine learning</li><li class="tag">Python</li><li class="tag">Django</li><li class="tag">Full-stack development</li></ul>
                         </article>
                     </li>
                     </ol>
@@ -1055,11 +1155,11 @@
             <div class="wrap">
                 <div class="sec-head reveal">
                     <div><span class="eyebrow">03 / Projects</span><h2 class="sec-title" id="projects-title">Things I've built.</h2></div>
-                    <p class="sec-desc">Production systems, AI agents and applications — shipped, deployed and used by real people.</p>
+                    <p class="sec-desc">Agent systems, a production platform and research.</p>
                 </div>
 
                 <div class="projects">
-                    <!-- Atrium: multi-agent trip planner -->
+<!-- Atrium: multi-agent trip planner -->
                     <article class="project">
                         <div class="stage reveal" data-tilt>
                             <div class="stage-inner">
@@ -1122,31 +1222,175 @@
                                         <circle r="3.5"><animateMotion dur="3.2s" repeatCount="indefinite" begin="2.2s"><mpath href="#ag-p8"/></animateMotion></circle>
                                     </g>
                                 </svg>
-                                <div class="sensor tests-chip" aria-hidden="true"><svg class="icon" style="width:14px;height:14px"><use href="#i-check"/></svg>287 tests · ~10s</div>
+                                <div class="sensor tests-chip" aria-hidden="true"><svg class="icon" style="width:14px;height:14px"><use href="#i-check"/></svg>Independent FastAPI services</div>
                             </div>
                         </div>
                         <div class="reveal">
-                            <div class="p-num"><b>01</b> AI Agents · Distributed Systems</div>
-                            <h3 class="p-title">Atrium — Multi-Agent Trip Planner</h3>
-                            <p class="p-desc">A network of LLM agents that plan a trip together. A Concierge talks to the user and delegates to Travel and Local Experience specialists over <b>A2A</b> as English-in/English-out function calls — one agent's tool call runs another agent's reasoning loop remotely. Each agent reaches its own tools over <b>MCP</b>.</p>
+                            <div class="p-num"><b>01</b> AI Agents · Multi-Agent Systems</div>
+                            <h3 class="p-title">Atrium: Multi-Agent Trip Planning Network</h3>
+                            <p class="p-desc">A network of specialist LLM agents that plan a trip together. Each agent runs as an independent FastAPI service; they discover each other and delegate work over the <b>Agent2Agent (A2A)</b> protocol, while each reaches its own tools over <b>MCP</b>.</p>
                             <ul class="points">
-                                <li>Object-oriented design splits every agent into four reusable layers, so one implementation runs as a unit test, an MCP tool or a networked service.</li>
-                                <li>Fail-fast validation, layered timeouts and isolated connection pools prevent head-of-line blocking; debugged A2A/MCP interoperability issues.</li>
-                                <li>Tiered models — a stronger orchestrator, cheaper specialists — cut inference cost without hurting plan quality.</li>
+                                <li>Exposed external tools and data through MCP servers, keeping tool access separate from agent reasoning.</li>
+                                <li>Built every agent on the OpenAI Agents SDK, but kept the protocol layer framework-agnostic, so an agent built on a different SDK could join the network over A2A without changes elsewhere.</li>
+                                <li>Async Python end to end, so agent-to-agent and tool calls run concurrently.</li>
                             </ul>
                             <div class="metrics">
-                                <div class="metric"><b>287</b><span>Tests · ~10s · no live API calls</span></div>
-                                <div class="metric"><b>4 layers</b><span>Tools → MCP → agent → A2A</span></div>
+                                <div class="metric"><b>3 agents</b><span>Concierge, Travel, Local Experience</span></div>
+                                <div class="metric"><b>A2A + MCP</b><span>Vendor-neutral protocol layer</span></div>
                             </div>
-                            <ul class="tags"><li class="tag">Python 3.11 async</li><li class="tag">OpenAI Agents SDK</li><li class="tag">A2A</li><li class="tag">MCP</li><li class="tag">Starlette / uvicorn</li><li class="tag">httpx</li><li class="tag">Pydantic</li><li class="tag">mypy strict</li></ul>
-                            <div class="p-links">
-                                <a class="btn btn-primary" href="https://github.com/dubemmmm/a2a-mcp-trip-planner" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a>
-                                <a class="btn btn-ghost" href="https://medium.com/@chidubem.onwuchuluba/three-agents-one-protocol-what-i-learned-building-with-a2a-and-mcp-d64ac084272c" target="_blank" rel="noopener noreferrer">Read the write-up <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
-                            </div>
+                            <ul class="tags"><li class="tag">Python asyncio</li><li class="tag">FastAPI</li><li class="tag">OpenAI Agents SDK</li><li class="tag">A2A</li><li class="tag">MCP</li><li class="tag">Pydantic</li><li class="tag">mypy strict</li></ul>
+                            <div class="p-links"><a class="btn btn-primary" href="https://github.com/dubemmmm/a2a-mcp-trip-planner" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a>
+                                <a class="btn btn-ghost" href="https://medium.com/@chidubem.onwuchuluba/three-agents-one-protocol-what-i-learned-building-with-a2a-and-mcp-d64ac084272c" target="_blank" rel="noopener noreferrer">Read the write-up <svg class="icon"><use href="#i-arrow-ur"/></svg></a></div>
                         </div>
                     </article>
 
-                    <!-- Dispatch AI -->
+                    <!-- CodeLens -->
+                    <article class="project">
+                        <div class="stage stage-ide reveal" data-tilt>
+                            <div class="stage-inner">
+                                <div class="browser">
+                                    <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">codelens · candidate session</span></div>
+                                    <div class="browser-shot"><img src="image17.jpg" alt="CodeLens candidate IDE with file tree, editor, test output and an AI agent chat" loading="lazy" width="1800" height="1238"></div>
+                                </div>
+                                <div class="browser win-2">
+                                    <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">reviewer · agentic coding score</span></div>
+                                    <div class="browser-shot"><img src="image18.jpg" alt="CodeLens reviewer page showing an Agentic Coding Score of 64 out of 100 with pillar breakdown" loading="lazy" width="1800" height="969"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reveal">
+                            <div class="p-num"><b>02</b> Agentic Coding · Full Stack</div>
+                            <h3 class="p-title">CodeLens: Agentic Coding Assessment Platform</h3>
+                            <p class="p-desc">A browser-based assessment platform that scores how engineers investigate, prompt, verify and decide when to trust AI agents, with assessor, candidate and reviewer flows, all inside one fully instrumented sandbox.</p>
+                            <ul class="points">
+                                <li>Provisions an isolated E2B sandbox VM per session in about 5 seconds: clones the repo, installs dependencies, pre-authenticates Claude Code and Codex, and allocates a real PTY.</li>
+                                <li>Candidate IDE with file tree, Monaco editor, xterm.js terminal and an in-app tool-calling agent chat streamed over NDJSON.</li>
+                                <li>Instruments every action into Supabase Postgres (edits, terminal commands, test runs, prompts with token counts, and Claude Code tool calls via hooks), with secrets redacted before persistence.</li>
+                                <li>A deterministic Agentic Coding Score across four weighted pillars, where every signal traces to logged events and no LLM judges the candidate.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>~5s</b><span>Sandbox VM per session</span></div>
+                                <div class="metric"><b>4 pillars</b><span>Outcome · AI · Comprehension · Process</span></div>
+                            </div>
+                            <ul class="tags"><li class="tag">Next.js 16</li><li class="tag">TypeScript</li><li class="tag">E2B</li><li class="tag">Supabase</li><li class="tag">Monaco</li><li class="tag">xterm.js</li><li class="tag">Claude Code</li><li class="tag">Codex</li></ul>
+                            <div class="p-links"><a class="btn btn-primary" href="https://github.com/dubemmmm/CodeLens" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a></div>
+                        </div>
+                    </article>
+
+                    <!-- Face authentication defense -->
+                    <article class="project">
+                        <div class="stage reveal" data-tilt>
+                            <div class="stage-inner">
+                                <svg class="agents" viewBox="0 0 640 460" role="img" aria-label="Diagram: an input face passes a ResNet-18 liveness model then a FaceNet recognition model; an attacker perturbs both stages, and an activation-fingerprint detector reading intermediate layers flags adversarial inputs before the decision.">
+                                    <g class="edges">
+                                        <path id="fa-p1" d="M134 232 H170"/>
+                                        <path id="fa-p2" d="M310 232 H340"/>
+                                        <path id="fa-p3" d="M480 232 H510"/>
+                                        <path id="fa-a1" d="M290 100 C290 150 240 150 240 200"/>
+                                        <path id="fa-a2" d="M350 100 C350 150 410 150 410 200"/>
+                                        <path id="fa-d1" d="M240 264 C240 300 290 300 290 336"/>
+                                        <path id="fa-d2" d="M410 264 C410 300 350 300 350 336"/>
+                                        <path id="fa-d3" d="M440 368 H486"/>
+                                        <path id="fa-d4" d="M552 336 V264"/>
+                                    </g>
+                                    <g class="edges flow">
+                                        <use href="#fa-p1"/><use href="#fa-p2"/><use href="#fa-p3"/><use href="#fa-d1"/><use href="#fa-d2"/><use href="#fa-d3"/><use href="#fa-d4"/>
+                                    </g>
+                                    <g class="edges attack"><use href="#fa-a1"/><use href="#fa-a2"/></g>
+
+                                    <rect class="n-soft" x="200" y="40" width="240" height="60" rx="14"/>
+                                    <text class="t-label" x="320" y="62" text-anchor="middle">ATTACKER</text>
+                                    <text class="t-body" x="320" y="84" text-anchor="middle">FGSM · PGD · C&amp;W · joint PGD</text>
+
+                                    <rect class="n" x="24" y="200" width="110" height="64" rx="14"/>
+                                    <g class="face" transform="translate(79 222)"><circle r="11"/><circle class="eye" cx="-4" cy="-2" r="1.6"/><circle class="eye" cx="4" cy="-2" r="1.6"/><path d="M-4 4 Q0 7 4 4"/></g>
+                                    <text class="t-sub" x="79" y="252" text-anchor="middle">input + δ</text>
+
+                                    <rect class="n" x="170" y="200" width="140" height="64" rx="14"/>
+                                    <text class="t-title" x="240" y="228" text-anchor="middle">Liveness</text>
+                                    <text class="t-sub" x="240" y="248" text-anchor="middle">ResNet-18 anti-spoof</text>
+                                    <rect class="n" x="340" y="200" width="140" height="64" rx="14"/>
+                                    <text class="t-title" x="410" y="228" text-anchor="middle">Recognition</text>
+                                    <text class="t-sub" x="410" y="248" text-anchor="middle">FaceNet identity</text>
+                                    <rect class="n" x="510" y="200" width="106" height="64" rx="14"/>
+                                    <text class="t-title" x="563" y="228" text-anchor="middle">Decision</text>
+                                    <text class="t-sub" x="563" y="248" text-anchor="middle">KYC gate</text>
+
+                                    <rect class="n-dark" x="190" y="336" width="250" height="64" rx="14"/>
+                                    <text class="t-title inv" x="315" y="364" text-anchor="middle">Activation fingerprint</text>
+                                    <text class="t-sub inv" x="315" y="384" text-anchor="middle">1,411-dim · intermediate layers</text>
+                                    <rect class="n" x="486" y="336" width="130" height="64" rx="14"/>
+                                    <text class="t-title" x="551" y="364" text-anchor="middle">0.997</text>
+                                    <text class="t-sub" x="551" y="384" text-anchor="middle">AUROC · flag first</text>
+
+                                    <g class="pill"><rect x="228" y="140" width="64" height="22" rx="11"/><text x="260" y="155" text-anchor="middle">perturb</text></g>
+                                    <g class="pill"><rect x="350" y="140" width="64" height="22" rx="11"/><text x="382" y="155" text-anchor="middle">perturb</text></g>
+                                    <g class="pill"><rect x="560" y="290" width="48" height="22" rx="11"/><text x="584" y="305" text-anchor="middle">block</text></g>
+                                    <text class="t-sub" x="320" y="440" text-anchor="middle">pipeline-aware attacks vs. a defense that reads the models' own activations</text>
+
+                                    <g class="packets">
+                                        <circle r="4"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#fa-p1"/></animateMotion></circle>
+                                        <circle r="4"><animateMotion dur="2.8s" repeatCount="indefinite" begin=".5s"><mpath href="#fa-p2"/></animateMotion></circle>
+                                        <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite" begin=".9s"><mpath href="#fa-d1"/></animateMotion></circle>
+                                        <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite" begin="1.1s"><mpath href="#fa-d2"/></animateMotion></circle>
+                                        <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite" begin="1.6s"><mpath href="#fa-d3"/></animateMotion></circle>
+                                        <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite" begin="2s"><mpath href="#fa-d4"/></animateMotion></circle>
+                                    </g>
+                                </svg>
+                                <div class="sensor tests-chip" aria-hidden="true"><svg class="icon" style="width:14px;height:14px"><use href="#i-check"/></svg>IEEE-format paper</div>
+                            </div>
+                        </div>
+                        <div class="reveal">
+                            <div class="p-num"><b>03</b> Research · Adversarial ML · Security</div>
+                            <h3 class="p-title">Defending End-to-End Face Authentication Pipelines</h3>
+                            <p class="p-desc">Digital KYC onboarding at banks, fintechs and payment platforms gates identity with a liveness model chained to a face recognition model, and an attacker can fool both in one shot. I built that pipeline, attacked it, and proposed a defense that reads the models’ own internal activations.</p>
+                            <ul class="points">
+                                <li>End-to-end pipeline: a ResNet-18 face anti-spoofing model gating a FaceNet face recognition model.</li>
+                                <li>Pipeline-aware attacks against both stages: FGSM, PGD, Carlini-Wagner, and a joint multi-objective PGD that defeats liveness and identity matching at the same time.</li>
+                                <li>Internal-activation fingerprinting: a 1,411-dimensional feature vector from intermediate layers flags adversarial inputs before an authentication decision is made.</li>
+                                <li>Tested cross-paradigm transferability against DeePixBiS, a depth-based liveness model; extends earlier work on an adaptive multi-stage detector (85–93% detection at 6.4 average forward passes).</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>0.997</b><span>AUROC detecting adversarial inputs</span></div>
+                                <div class="metric"><b>1,411-d</b><span>Activation fingerprint</span></div>
+                            </div>
+                            <ul class="tags"><li class="tag">PyTorch</li><li class="tag">ResNet-18</li><li class="tag">FaceNet</li><li class="tag">DeePixBiS</li><li class="tag">FGSM · PGD · C&amp;W</li></ul>
+                        </div>
+                    </article>
+
+<!-- Real estate -->
+                    <article class="project">
+                        <div class="stage stage-real reveal" data-tilt>
+                            <div class="stage-inner">
+                                <div class="browser">
+                                    <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">offplan.cwlagos.com</span></div>
+                                    <div class="browser-shot"><img src="image8.png" alt="CW Lagos Off-Plan homepage: Lagos off-plan developments, intelligently tracked and clearly priced" loading="lazy" width="1800" height="1125"></div>
+                                </div>
+                                <div class="phone"><img src="image11.jpg" alt="CW Lagos Off-Plan on mobile: curated developments with the Metropolitan Towers listing" loading="lazy" width="647" height="1400"></div>
+                            </div>
+                        </div>
+                        <div class="reveal">
+                            <div class="p-num"><b>04</b> Full Stack · Cloud · Data Platform</div>
+                            <h3 class="p-title">CW Lagos Real Estate Operations Platform</h3>
+                            <p class="p-desc">A full-stack cloud platform I architected and still run for CW Lagos, tracking 300+ off-plan properties for 15,000+ monthly visitors on AWS (EC2, S3, CloudFront, ELB, CloudWatch) with auto-scaling, a CDN and monitoring.</p>
+                            <ul class="points">
+                                <li>Optimized PostgreSQL queries and added connection pooling and load balancing, reaching 98% uptime and 2-second page loads while cutting infrastructure cost by 25%.</li>
+                                <li>Diagnosed recurring OOM kills on a t3.micro through memory profiling and right-sized to t3.medium, ending production crashes.</li>
+                                <li>Built a Celery-driven Airtable sync pipeline; fixed a crash on blank fields, eliminated duplicate sync scheduling and made stale-record pruning safe.</li>
+                                <li>Added Pinecone vector search for semantic property lookup (an earlier version ran RAG over listings with ChromaDB); CI/CD with GitHub Actions and n8n workflows.</li>
+                            </ul>
+                            <div class="metrics">
+                                <div class="metric"><b>300+</b><span>Off-plan properties</span></div>
+                                <div class="metric"><b>15K+</b><span>Monthly visitors</span></div>
+                                <div class="metric"><b>98%</b><span>Uptime · ~2s page loads</span></div>
+                                <div class="metric"><b>−25%</b><span>Infrastructure cost</span></div>
+                            </div>
+                            <ul class="tags"><li class="tag">Django</li><li class="tag">PostgreSQL</li><li class="tag">Celery</li><li class="tag">Airtable</li><li class="tag">Pinecone</li><li class="tag">Next.js</li><li class="tag">AWS</li><li class="tag">GitHub Actions</li><li class="tag">n8n</li></ul>
+                            <div class="p-links"><a class="btn btn-primary" href="https://offplan.cwlagos.com/" target="_blank" rel="noopener noreferrer">Visit live site <svg class="icon"><use href="#i-arrow-ur"/></svg></a></div>
+                        </div>
+                    </article>
+
+<!-- Dispatch AI -->
                     <article class="project">
                         <div class="stage dispatch reveal" data-tilt>
                             <div class="stage-inner">
@@ -1169,9 +1413,9 @@
                                             <div class="msg me" style="--d:0">Schedule a meeting with John tomorrow at 3pm</div>
                                             <div class="route" style="--d:350">→ CalendarAgent</div>
                                             <div class="msg bot" style="--d:700">Done ✓ “Meeting with John” is on your calendar for tomorrow, 3:00 PM.</div>
-                                            <div class="msg me" style="--d:1200">Remind me to call Mum in 1 hour</div>
+                                            <div class="msg me" style="--d:1200">Remind me to call Mom in 1 hour</div>
                                             <div class="route" style="--d:1550">→ ReminderAgent</div>
-                                            <div class="msg bot" style="--d:1900">Got it — I'll remind you in 1 hour.</div>
+                                            <div class="msg bot" style="--d:1900">Got it. I'll remind you in 1 hour.</div>
                                         </div>
                                         <div class="tg-input"><span>Message</span><i></i></div>
                                     </div>
@@ -1179,62 +1423,128 @@
                             </div>
                         </div>
                         <div class="reveal">
-                            <div class="p-num"><b>02</b> AI Agents · Automation</div>
-                            <h3 class="p-title">Dispatch AI — Personal Assistant Bot</h3>
-                            <p class="p-desc">A Telegram bot that works as my personal AI assistant. Every message goes to a <b>router agent</b> that hands it off to the right specialist — Google Calendar, Gmail, Google Tasks, reminders, web search, notes or computer control. Built on the OpenAI Agents SDK.</p>
+                            <div class="p-num"><b>05</b> AI Agents · Automation</div>
+                            <h3 class="p-title">Dispatch AI: Telegram Personal Assistant</h3>
+                            <p class="p-desc">A dispatcher-plus-specialists assistant that lives in Telegram. A <b>routing agent</b> reads each message and hands off to one of seven specialists: Gmail, Calendar, Tasks, web search, reminders, notes and macOS control.</p>
                             <ul class="points">
-                                <li>Router agent with handoffs to seven specialist agents, each with its own tools and system prompt.</li>
-                                <li>Per-user conversation memory with a 30-minute window, so follow-ups like “her email is x@example.com” keep their context.</li>
-                                <li>Google OAuth for Calendar, Gmail and Tasks; APScheduler for time-based reminders; access can be locked to a single Telegram user.</li>
+                                <li>Gmail agent with correct MIME threading so replies land in the right conversation; Calendar and Tasks agents with full CRUD and ISO 8601 handling for reliable dates and time zones.</li>
+                                <li>Google OAuth 2.0 with automatic token refresh, and live web search through the Brave Search API.</li>
+                                <li>Stateful per-user conversation memory with 30-minute session expiry, so multi-turn requests keep their context.</li>
+                                <li>Async push reminders with APScheduler so the bot messages you proactively, plus a macOS control agent that runs local system actions from chat.</li>
                             </ul>
                             <div class="metrics">
                                 <div class="metric"><b>7</b><span>Specialist agents</span></div>
                                 <div class="metric"><b>30 min</b><span>Conversation memory</span></div>
                             </div>
-                            <ul class="tags"><li class="tag">Python</li><li class="tag">OpenAI Agents SDK</li><li class="tag">python-telegram-bot</li><li class="tag">Google APIs</li><li class="tag">OAuth 2.0</li><li class="tag">APScheduler</li></ul>
-                            <div class="p-links">
-                                <a class="btn btn-primary" href="https://github.com/dubemmmm/dispatch-ai" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a>
-                            </div>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">OpenAI Agents SDK</li><li class="tag">Telegram Bot API</li><li class="tag">Google OAuth 2.0</li><li class="tag">Brave Search API</li><li class="tag">APScheduler</li></ul>
+                            <div class="p-links"><a class="btn btn-primary" href="https://github.com/dubemmmm/dispatch-ai" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a></div>
                         </div>
                     </article>
 
-                    <!-- Real estate -->
+                    <!-- Code reviewer -->
                     <article class="project">
-                        <div class="stage stage-real reveal" data-tilt>
+                        <div class="stage cr reveal" data-tilt>
                             <div class="stage-inner">
-                                <div class="browser">
-                                    <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">offplan.cwlagos.com</span></div>
-                                    <div class="browser-shot"><img src="image8.png" alt="CW Lagos Off-Plan homepage: Lagos off-plan developments, intelligently tracked and clearly priced" loading="lazy" width="1800" height="1125"></div>
+                                <div class="rev-term" role="img" aria-label="Example output: python main.py runs four reviewer agents in parallel, then the aggregator prints a score, verdict and top action and saves a Markdown report">
+                                    <div class="term-bar"><i></i><i></i><i></i><span>example output · zsh</span></div>
+                                    <div class="rev-body">
+                                        <div style="--d:0"><span class="p">❯</span> python main.py</div>
+                                        <div class="dim" style="--d:250">=== Autonomous Code Review System ===</div>
+                                        <div style="--d:500"><span class="dim">Enter choice (1 or 2):</span> 1</div>
+                                        <div style="--d:700"><span class="dim">Enter file or directory path:</span> src</div>
+                                        <div class="dim" style="--d:950">Running all 4 reviewers in parallel...</div>
+                                        <div style="--d:1250"><span class="ok">✓</span> STATIC ANALYSIS <span class="dim">······</span> Quality: GOOD</div>
+                                        <div style="--d:1250"><span class="ok">✓</span> SECURITY AUDIT <span class="dim">·····</span> Risk Level: <span class="hi">HIGH</span></div>
+                                        <div style="--d:1250"><span class="ok">✓</span> PERFORMANCE REVIEW <span class="dim">·</span> Efficiency: FAIR</div>
+                                        <div style="--d:1250"><span class="ok">✓</span> DOCUMENTATION REVIEW Coverage: FAIR</div>
+                                        <div class="dim" style="--d:2000">── AGGREGATING RESULTS... ──────────</div>
+                                        <div style="--d:2300">Score <b>78</b>/100 · Verdict: NEEDS MINOR WORK</div>
+                                        <div style="--d:2500"><span class="dim">1.</span> remove hardcoded secret in config.py</div>
+                                        <div class="dim" style="--d:2750">saved → output/reports/review_src_&lt;timestamp&gt;.md</div>
+                                    </div>
                                 </div>
-                                <div class="phone"><img src="image11.jpg" alt="CW Lagos Off-Plan on mobile: curated developments with the Metropolitan Towers listing" loading="lazy" width="647" height="1400"></div>
                             </div>
                         </div>
                         <div class="reveal">
-                            <div class="p-num"><b>03</b> Full Stack · Data Platform · AWS</div>
-                            <h3 class="p-title">Real Estate Data Platform</h3>
-                            <p class="p-desc">CW Lagos Off-Plan — a production platform I built and still operate that tracks every off-plan development in Lagos and compares them by price per square metre and neighbourhood. It runs on a PostgreSQL data model with an employee portal for managing inventory.</p>
+                            <div class="p-num"><b>06</b> AI Agents · Developer Tools</div>
+                            <h3 class="p-title">Autonomous Multi-Agent Code Reviewer</h3>
+                            <p class="p-desc">A CLI that reviews code from four angles at once. Four specialist agents run concurrently, then a fifth aggregator merges everything into one prioritized report with a quality score.</p>
                             <ul class="points">
-                                <li>A scheduled Celery sync pipeline on EC2 keeps listings, images and metadata consistent via idempotent upserts.</li>
-                                <li>I translate a non-technical client's requirements into shipped features and own schema design, deployment (Nginx/Gunicorn, S3/CloudFront), monitoring and incident response.</li>
+                                <li>Four reviewer lenses: StaticAnalyzer (quality, anti-patterns), SecurityAuditor (OWASP Top 10, injection, secrets, CVE lookup), PerformanceReviewer (complexity, N+1, async misuse) and DocChecker (docstrings, type hints, dead code).</li>
+                                <li>All four run with asyncio.gather, so a full four-angle review takes about as long as a single agent call.</li>
+                                <li>A ReportAggregator agent deduplicates overlapping findings, ranks by severity and produces a 0–100 score, verdict, executive summary and top 3 actions, enforced with Pydantic schemas.</li>
+                                <li>Prints each reviewer’s report, then the aggregated report, and saves a Markdown report; supports Python, JS, TS, JSX/TSX, HTML, CSS, JSON and YAML.</li>
                             </ul>
                             <div class="metrics">
-                                <div class="metric"><b>248+</b><span>Developments tracked</span></div>
-                                <div class="metric"><b>600+</b><span>Units in the database</span></div>
-                                <div class="metric"><b>15K+</b><span>Monthly visitors</span></div>
-                                <div class="metric"><b>98%</b><span>Uptime on AWS</span></div>
+                                <div class="metric"><b>4 + 1</b><span>Parallel reviewers + aggregator</span></div>
+                                <div class="metric"><b>0–100</b><span>Score, verdict & top 3 actions</span></div>
                             </div>
-                            <ul class="tags"><li class="tag">Django</li><li class="tag">PostgreSQL</li><li class="tag">Celery</li><li class="tag">Redis</li><li class="tag">EC2</li><li class="tag">S3</li><li class="tag">CloudFront</li><li class="tag">Nginx / Gunicorn</li></ul>
-                            <div class="p-links">
-                                <a class="btn btn-primary" href="https://offplan.cwlagos.com/" target="_blank" rel="noopener noreferrer">Visit live site <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
-                            </div>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">OpenAI Agents SDK</li><li class="tag">asyncio</li><li class="tag">Pydantic</li><li class="tag">Brave Search API</li></ul>
+                            <div class="p-links"><a class="btn btn-primary" href="https://github.com/dubemmmm/code-review-agents" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a></div>
                         </div>
                     </article>
+                </div>
 
-                    <!-- PulseGuard -->
-                    <article class="project">
-                        <div class="stage stage-pulse reveal" data-tilt>
+                <div class="more-head reveal"><h3>More projects</h3></div>
+                <div class="more-grid">
+                    <article class="card mini reveal">
+                        <div class="mini-img"><img src="image10.jpg" alt="Smart waste classification web app" loading="lazy" width="1600" height="968"></div>
+                        <div class="mini-body">
+                            <div class="p-num">AI · Computer Vision</div>
+                            <h4>Intelligent Waste Classification System</h4>
+                            <p>A waste recognition web app: upload a photo and a ResNet50 model built in PyTorch classifies the material into one of 7 categories (plastic, glass, paper, metal, cardboard, cloth and other) with 92% accuracy, then shows recycling guidance for it.</p>
+                            <ul class="tags"><li class="tag">PyTorch</li><li class="tag">ResNet50</li><li class="tag">Django</li><li class="tag">SQLite</li></ul>
+                            <div class="p-links"><a class="btn btn-ghost" href="https://github.com/dubemmmm/WasteApp" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> Code</a></div>
+                        </div>
+                    </article>
+                    <article class="card mini reveal">
+                        <div class="mini-img scan"><img src="image19.jpg" alt="Attendance system recognizing a face in a live camera frame and labeling it with the student's name" loading="lazy" width="1400" height="889" style="object-position: center 20%"><div class="scanline" aria-hidden="true"></div></div>
+                        <div class="mini-body">
+                            <div class="p-num">AI · Computer Vision</div>
+                            <h4>Facial Recognition Attendance (Prototype)</h4>
+                            <p>A prototype attendance system that recognizes students' faces in real time and marks attendance automatically, with separate student and teacher logins, attendance reports, and checks against proxy attendance.</p>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">Django</li><li class="tag">face_recognition</li><li class="tag">Computer vision</li></ul>
+                            <div class="p-links"><a class="btn btn-ghost" href="https://github.com/dubemmmm/Attendance-System" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> Code</a><a class="btn btn-ghost" href="https://www.linkedin.com/feed/update/urn:li:activity:7213573501658484736/" target="_blank" rel="noopener noreferrer">Demo <svg class="icon"><use href="#i-arrow-ur"/></svg></a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= RESEARCH ================= -->
+        <section class="section" id="research" aria-labelledby="research-title">
+            <div class="wrap">
+                <div class="sec-head reveal">
+                    <div><span class="eyebrow">04 / Research &amp; Awards</span><h2 class="sec-title" id="research-title">Research &amp; recognition.</h2></div>
+                    <p class="sec-desc">Adversarial machine learning research at Georgia State, and building under pressure at hackathons.</p>
+                </div>
+                <div class="research">
+                    <div class="card pubs reveal">
+                        <span class="card-label">Papers &amp; thesis</span>
+                        <ol class="pub-list">
+                            <li class="pub">
+                                <div class="pub-meta"><span class="pub-kind">Manuscript</span>IEEE format · Georgia State University</div>
+                                <h3>Defending End-to-End Face Authentication Pipelines via Internal-Activation Feature Fingerprinting</h3>
+                                <p class="pub-authors"><b>C. Onwuchuluba</b>, C. Killari Giribabu</p>
+                                <ul class="wins"><li class="win"><b>0.997</b> AUROC</li><li class="win"><b>1,411-d</b> fingerprint</li></ul>
+                            </li>
+                            <li class="pub">
+                                <div class="pub-meta"><span class="pub-kind">Course paper</span>CSC 8230 · Georgia State University · Spring 2026</div>
+                                <h3>Adaptive Multi-Stage Defense Against Adversarial Examples: Progressive Intensity Matching Input Difficulty</h3>
+                                <p class="pub-authors"><b>C. Onwuchuluba</b>, C. Killari Giribabu</p>
+                                <ul class="wins"><li class="win"><b>85–93%</b> detection</li><li class="win"><b>6.4</b> avg forward passes</li></ul>
+                            </li>
+                            <li class="pub">
+                                <div class="pub-meta"><span class="pub-kind ongoing"><span class="pulse"></span>In progress</span>Georgia State University</div>
+                                <h3>M.S. Thesis</h3>
+                                <p class="pub-authors">Thesis-track Master of Science in Computer Science</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <article class="card award reveal">
+                        <div class="stage stage-pulse award-stage">
                             <div class="stage-inner">
-                                <div class="phone"><img src="image13.jpg" alt="PulseGuard mobile dashboard showing heart rate and drink safety status" loading="lazy" width="587" height="1280"></div>
+                                <div class="phone"><img src="image13.jpg" alt="PulseGuard mobile dashboard showing heart rate and sensor readings" loading="lazy" width="587" height="1280"></div>
                                 <div class="ecg" aria-hidden="true">
                                     <div class="ecg-top"><span>HEART RATE</span><span>live</span></div>
                                     <div class="ecg-bpm">72 <small>BPM</small></div>
@@ -1243,71 +1553,12 @@
                                 <div class="sensor" aria-hidden="true"><span class="pulse"></span>VOC sensor · normal</div>
                             </div>
                         </div>
-                        <div class="reveal">
-                            <div class="p-num"><b>04</b> IoT · Hardware · Real-time</div>
+                        <div class="award-body">
                             <span class="p-award"><svg class="icon"><use href="#i-trophy"/></svg>HackATL 2025 Finalist</span>
                             <h3 class="p-title">PulseGuard</h3>
-                            <p class="p-desc">A predictive safety wearable that adapts NASA VOC sensor technology to detect drink tampering. Paired with a real-time dashboard for heart-rate monitoring and automated emergency alerts. Built with team LunaTek.</p>
-                            <div class="metrics">
-                                <div class="metric"><b>NASA</b><span>VOC sensor tech, adapted</span></div>
-                                <div class="metric"><b>Real-time</b><span>Heart rate + alerts</span></div>
-                            </div>
-                            <div class="p-links">
-                                <a class="btn btn-ghost" href="https://www.linkedin.com/posts/chidubem-onwuchuluba-787414227_hackatl2025-safetytech-innovation-activity-7387200677137178624-eeu0" target="_blank" rel="noopener noreferrer">View achievement <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Facial recognition -->
-                    <article class="project">
-                        <div class="stage reveal" data-tilt>
-                            <div class="stage-inner">
-                                <div class="browser">
-                                    <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">attendance-system · live camera</span></div>
-                                    <div class="browser-shot pix">
-                                        <img src="image2.jpeg" alt="AI facial recognition attendance system detecting a face" loading="lazy" width="280" height="180">
-                                        <div class="scanline" aria-hidden="true"></div>
-                                        <div class="face-box" aria-hidden="true"><span>match · 0.94</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reveal">
-                            <div class="p-num"><b>05</b> AI · Computer Vision</div>
-                            <h3 class="p-title">AI Facial Recognition Attendance</h3>
-                            <p class="p-desc">A production attendance system that uses deep learning to recognise students in real time — deployed at Covenant University to replace manual roll-calls.</p>
-                            <div class="metrics">
-                                <div class="metric"><b>94%</b><span>Recognition accuracy</span></div>
-                                <div class="metric"><b>Deployed</b><span>Covenant University</span></div>
-                            </div>
-                            <div class="p-links">
-                                <a class="btn btn-primary" href="https://github.com/dubemmmm/Attendance-System" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> View code</a>
-                                <a class="btn btn-ghost" href="https://www.linkedin.com/feed/update/urn:li:activity:7213573501658484736/" target="_blank" rel="noopener noreferrer">Watch demo <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Waste -->
-                    <article class="project">
-                        <div class="stage reveal" data-tilt>
-                            <div class="stage-inner">
-                                <div class="browser">
-                                    <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">dubemm.pythonanywhere.com</span></div>
-                                    <div class="browser-shot"><img src="image10.png" alt="Smart waste classification web app" loading="lazy" width="3212" height="1944"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reveal">
-                            <div class="p-num"><b>06</b> AI · CNN · GPT API</div>
-                            <h3 class="p-title">Smart Waste Classification</h3>
-                            <p class="p-desc">Snap a photo of an item and a CNN classifies the waste type, then the GPT API generates context-specific recycling instructions for it.</p>
-                            <div class="metrics">
-                                <div class="metric"><b>92%</b><span>Classification accuracy</span></div>
-                                <div class="metric"><b>CNN + LLM</b><span>Vision → guidance</span></div>
-                            </div>
-                            <div class="p-links">
-                                <a class="btn btn-primary" href="https://dubemm.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Try live demo <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
-                            </div>
+                            <p>A predictive safety wearable built in 48 hours. It runs an ML risk model on sensor data to detect hazardous chemical exposure in real time, with an automated alerting dashboard that flags at-risk users before exposure becomes dangerous. Built with team LunaTek.</p>
+                            <ul class="tags"><li class="tag">Machine learning</li><li class="tag">Sensor data</li><li class="tag">Real-time dashboards</li></ul>
+                            <div class="p-links"><a class="btn btn-ghost" href="https://www.linkedin.com/posts/chidubem-onwuchuluba-787414227_hackatl2025-safetytech-innovation-activity-7387200677137178624-eeu0" target="_blank" rel="noopener noreferrer">View achievement <svg class="icon"><use href="#i-arrow-ur"/></svg></a></div>
                         </div>
                     </article>
                 </div>
@@ -1318,90 +1569,107 @@
         <section class="section" id="skills" aria-labelledby="skills-title">
             <div class="wrap">
                 <div class="sec-head reveal">
-                    <div><span class="eyebrow">04 / Skills</span><h2 class="sec-title" id="skills-title">My toolkit.</h2></div>
-                    <p class="sec-desc">Languages, platforms and practices I use to take systems from design review to production.</p>
+                    <div><span class="eyebrow">05 / Skills</span><h2 class="sec-title" id="skills-title">My toolkit.</h2></div>
+                    <p class="sec-desc">The languages, platforms and tools I use to take systems from design to production.</p>
                 </div>
                 <div class="skills">
                     <div class="card skill-group reveal">
                         <h3>Languages</h3>
                         <ul class="tools">
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" loading="lazy">Python</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/go/go-original-wordmark.svg" alt="" loading="lazy">Go</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" loading="lazy">Python <small>primary</small></li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" loading="lazy">C#</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/go/go-original-wordmark.svg" alt="" loading="lazy">Go</li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="" loading="lazy">Java</li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy">C++</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="" loading="lazy">TypeScript</li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</li>
                             <li class="tool t">SQL</li>
-                            <li class="tool t">Assembly</li>
                         </ul>
                     </div>
                     <div class="card skill-group reveal">
-                        <h3>AI, Agents &amp; ML</h3>
+                        <h3>Backend &amp; Frameworks</h3>
                         <ul class="tools">
-                            <li class="tool t">OpenAI Agents SDK</li>
-                            <li class="tool t">A2A protocol</li>
-                            <li class="tool t">Model Context Protocol</li>
-                            <li class="tool t">LLM tool use</li>
-                            <li class="tool t">Multi-agent orchestration</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytorch/pytorch-original.svg" alt="" loading="lazy">PyTorch</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy">TensorFlow</li>
-                            <li class="tool t">Computer vision · CNNs</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/django/django-plain.svg" alt="" loading="lazy">Django</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/fastapi/fastapi-original.svg" alt="" loading="lazy">FastAPI</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg" alt="" loading="lazy">Flask</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nextjs/nextjs-original.svg" alt="" loading="lazy">Next.js</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" loading="lazy">React</li>
+                            <li class="tool t">Celery</li>
+                            <li class="tool t">REST APIs</li>
+                            <li class="tool t">Async Python</li>
                         </ul>
                     </div>
                     <div class="card skill-group reveal">
-                        <h3>Cloud &amp; Infrastructure</h3>
-                        <ul class="tools">
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy">AWS <small>EC2 · S3 · CloudWatch · CloudFront</small></li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/azure/azure-original.svg" alt="" loading="lazy">Microsoft Azure</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy">Docker</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-original.svg" alt="" loading="lazy">Kubernetes</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="" loading="lazy">Jenkins</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gitlab/gitlab-original.svg" alt="" loading="lazy">GitLab CI</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" loading="lazy">Git</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt="" loading="lazy">Linux</li>
-                        </ul>
-                    </div>
-                    <div class="card skill-group reveal">
-                        <h3>Databases &amp; Systems</h3>
+                        <h3>Data Stores</h3>
                         <ul class="tools">
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy">PostgreSQL</li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" loading="lazy">MySQL</li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt="" loading="lazy">MongoDB</li>
                             <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/redis/redis-original.svg" alt="" loading="lazy">Redis</li>
-                            <li class="tool t">Indexing</li>
-                            <li class="tool t">Caching</li>
-                            <li class="tool t">Transactions</li>
-                            <li class="tool t">Distributed systems</li>
-                            <li class="tool t">Concurrency</li>
+                            <li class="tool t">Pinecone</li>
+                            <li class="tool t">ChromaDB</li>
+                            <li class="tool t">Airtable</li>
                         </ul>
                     </div>
                     <div class="card skill-group reveal">
-                        <h3>Backend &amp; Web</h3>
+                        <h3>Cloud &amp; DevOps</h3>
                         <ul class="tools">
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/django/django-plain.svg" alt="" loading="lazy">Django</li>
-                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nginx/nginx-original.svg" alt="" loading="lazy">Nginx</li>
-                            <li class="tool t">RESTful APIs</li>
-                            <li class="tool t">Microservices</li>
-                            <li class="tool t">Celery</li>
-                            <li class="tool t">Starlette / uvicorn</li>
-                            <li class="tool t">Gunicorn</li>
-                            <li class="tool t">Chart.js</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy">AWS <small>EC2 · S3 · CloudFront · ELB · CloudWatch</small></li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/azure/azure-original.svg" alt="" loading="lazy">Azure</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/googlecloud/googlecloud-original.svg" alt="" loading="lazy">GCP</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy">Docker</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-original.svg" alt="" loading="lazy">Kubernetes</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/githubactions/githubactions-original.svg" alt="" loading="lazy">GitHub Actions</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="" loading="lazy">Jenkins</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gitlab/gitlab-original.svg" alt="" loading="lazy">GitLab CI</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt="" loading="lazy">Linux</li>
+                            <li class="tool t">Blue-green deploys</li>
                         </ul>
                     </div>
                     <div class="card skill-group reveal">
-                        <h3>Engineering practice</h3>
+                        <h3>ML &amp; AI</h3>
                         <ul class="tools">
-                            <li class="tool t">Unit / integration / load testing</li>
-                            <li class="tool t">CI/CD</li>
-                            <li class="tool t">Code review</li>
-                            <li class="tool t">Observability</li>
-                            <li class="tool t">Dependency injection</li>
-                            <li class="tool t">mypy</li>
-                            <li class="tool t">Pydantic</li>
-                            <li class="tool t">Agile</li>
-                            <li class="tool t">OOP &amp; design patterns</li>
-                            <li class="tool t">Data structures &amp; algorithms</li>
-                            <li class="tool t">System design</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytorch/pytorch-original.svg" alt="" loading="lazy">PyTorch</li>
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/scikitlearn/scikitlearn-original.svg" alt="" loading="lazy">scikit-learn</li>
+                            <li class="tool t">CNNs · ResNet · FaceNet</li>
+                            <li class="tool t">Adversarial ML <small>FGSM · PGD · C&amp;W</small></li>
+                            <li class="tool t">RAG</li>
+                            <li class="tool t">Hybrid retrieval <small>BM25 + dense + reranking</small></li>
+                        </ul>
+                    </div>
+                    <div class="card skill-group reveal">
+                        <h3>Agentic AI</h3>
+                        <ul class="tools">
+                            <li class="tool t">OpenAI Agents SDK</li>
+                            <li class="tool t">A2A protocol</li>
+                            <li class="tool t">Model Context Protocol</li>
+                            <li class="tool t">Multi-agent orchestration</li>
+                            <li class="tool t">Tool use</li>
+                            <li class="tool t">Agent evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-group reveal">
+                        <h3>AI-Augmented Development</h3>
+                        <ul class="tools">
+                            <li class="tool t">Claude Code</li>
+                            <li class="tool t">Codex CLI</li>
+                            <li class="tool t">Cursor</li>
+                            <li class="tool t">GitHub Spec Kit</li>
+                            <li class="tool t">Spec-driven development</li>
+                            <li class="tool t">AI code review</li>
+                            <li class="tool t">Agent skill authoring <small>Claude Code &amp; Codex</small></li>
+                        </ul>
+                    </div>
+                    <div class="card skill-group reveal">
+                        <h3>Automation &amp; Testing</h3>
+                        <ul class="tools">
+                            <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytest/pytest-original.svg" alt="" loading="lazy">pytest</li>
+                            <li class="tool t">mypy (strict)</li>
+                            <li class="tool t">Deterministic test suites</li>
+                            <li class="tool t">n8n</li>
+                            <li class="tool t">UiPath</li>
+                            <li class="tool t">Blue Prism</li>
+                            <li class="tool t">Palantir Foundry <small>Ontology · pipelines</small></li>
                         </ul>
                     </div>
                 </div>
@@ -1412,7 +1680,7 @@
         <section class="section" id="education" aria-labelledby="education-title">
             <div class="wrap">
                 <div class="sec-head reveal">
-                    <div><span class="eyebrow">05 / Education</span><h2 class="sec-title" id="education-title">Always learning.</h2></div>
+                    <div><span class="eyebrow">06 / Education</span><h2 class="sec-title" id="education-title">Always learning.</h2></div>
                     <p class="sec-desc">A strong foundation in computer science, plus certifications along the way.</p>
                 </div>
 
@@ -1422,8 +1690,8 @@
                         <div class="deg-body">
                             <div class="deg-school">Georgia State University</div>
                             <h3 class="deg-name">M.S. Computer Science</h3>
-                            <div class="deg-meta"><span>Aug 2025 — <b>Dec 2027</b></span><span>Machine Learning &amp; Software Engineering</span></div>
-                            <div class="coursework"><span class="card-label">Coursework</span><ul><li>Machine Learning</li><li>Computational Intelligence (Neural Networks, Optimization)</li><li>Secure and Private AI</li></ul></div>
+                            <div class="deg-meta"><span>Machine Learning &amp; Software Engineering</span><span><b>Thesis track</b></span></div>
+                            <div class="coursework"><span class="card-label">Coursework</span><ul><li>Machine Learning</li><li>Computational Intelligence (Neural Networks, Optimization)</li><li>Secure and Private AI</li><li>Cybersecurity and Ethical Hacking</li></ul></div>
                         </div>
                         <div class="gpa-ring" style="--off:3.5" role="img" aria-label="GPA 3.92 out of 4.0">
                             <svg viewBox="0 0 64 64"><circle class="track" cx="32" cy="32" r="28"/><circle class="val" cx="32" cy="32" r="28"/></svg><b>3.92</b>
@@ -1434,7 +1702,7 @@
                         <div class="deg-body">
                             <div class="deg-school">Covenant University</div>
                             <h3 class="deg-name">B.S. Computer Science</h3>
-                            <div class="deg-meta"><span>Aug 2019 — May 2023</span><span><b>Magna Cum Laude</b></span></div>
+                            <div class="deg-meta"><span>Aug 2019 – May 2023</span><span><b>Magna Cum Laude</b></span><span><b>Top 2%</b></span><span>Ota, Nigeria</span></div>
                             <div class="coursework"><span class="card-label">Coursework</span><ul><li>Data Structures and Algorithms</li><li>Object-Oriented Programming</li></ul></div>
                         </div>
                         <div class="gpa-ring" style="--off:5.7" role="img" aria-label="GPA 3.87 out of 4.0">
@@ -1445,16 +1713,15 @@
 
                 <div class="certs-head reveal"><h3>Certifications</h3><p>Click a certificate to view it</p></div>
                 <ul class="certs">
-                    <li class="reveal feat"><button class="card cert" data-full="image15.png"><div class="cert-img"><img src="image15.png" alt="GitHub Certified: Agentic AI Developer certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">GitHub Certified: Agentic AI Developer</div><div class="cert-issuer">GitHub · Microsoft · 2026</div></div></button></li>
-                    <li class="reveal feat"><div class="card cert cert-text"><div class="cert-img cert-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy"><span>Certified<br><b>Solutions Architect</b></span></div><div class="cert-body"><div class="cert-name">AWS Certified Solutions Architect</div><div class="cert-issuer">Amazon Web Services</div></div></div></li>
-                    <li class="reveal"><button class="card cert" data-full="image16.png"><div class="cert-img"><img src="image16.png" alt="IBM AI Developer professional certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">IBM AI Developer</div><div class="cert-issuer">IBM · Coursera (10 courses)</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="image14.png"><div class="cert-img"><img src="image14.png" alt="AWS Cloud Practitioner certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">AWS Cloud Practitioner</div><div class="cert-issuer">Amazon Web Services</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="ai.png"><div class="cert-img"><img src="ai.png" alt="Machine Learning certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">Machine Learning</div><div class="cert-issuer">Udemy</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="elementsofai.jpg"><div class="cert-img"><img src="elementsofai.jpg" alt="Elements of AI certificate of completion" loading="lazy"></div><div class="cert-body"><div class="cert-name">Elements of AI</div><div class="cert-issuer">MinnaLearn · University of Helsinki</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="fullstack.png"><div class="cert-img"><img src="fullstack.png" alt="Full Stack Development certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">Full Stack Development</div><div class="cert-issuer">Udemy</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="network.png"><div class="cert-img"><img src="network.png" alt="Networking Essentials certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">Networking Essentials</div><div class="cert-issuer">Cisco</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="cyber.png"><div class="cert-img"><img src="cyber.png" alt="Cybersecurity Essentials certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">Cybersecurity Essentials</div><div class="cert-issuer">Cisco</div></div></button></li>
-                    <li class="reveal"><button class="card cert" data-full="blueprism.png"><div class="cert-img"><img src="blueprism.png" alt="RPA Developer certificate" loading="lazy"></div><div class="cert-body"><div class="cert-name">RPA Developer</div><div class="cert-issuer">Blue Prism</div></div></button></li>
+                    <li class="reveal feat has-verify"><button class="card cert" data-full="image15.jpg"><div class="cert-img"><img src="image15.jpg" alt="GitHub Certified: Agentic AI Developer certificate" loading="lazy" width="1600" height="877"></div><div class="cert-body"><div class="cert-name">GitHub Certified: Agentic AI Developer</div><div class="cert-issuer">GitHub · Microsoft · 2026</div></div></button><a class="cert-verify" href="https://learn.microsoft.com/en-gb/users/chidubemonwuchuluba-4597/credentials/fae51733e6c9fd71" target="_blank" rel="noopener noreferrer" aria-label="Verify the GitHub Certified: Agentic AI Developer credential on Microsoft Learn">Verify <svg class="icon"><use href="#i-arrow-ur"/></svg></a></li>
+                    <li class="reveal feat has-verify"><button class="card cert" data-full="image16.jpg"><div class="cert-img"><img src="image16.jpg" alt="IBM AI Developer professional certificate" loading="lazy" width="1600" height="1242"></div><div class="cert-body"><div class="cert-name">IBM AI Developer</div><div class="cert-issuer">IBM · Coursera (10 courses)</div></div></button><a class="cert-verify" href="https://coursera.org/verify/professional-cert/GKNLNG2DS0U6" target="_blank" rel="noopener noreferrer" aria-label="Verify the IBM AI Developer certificate on Coursera">Verify <svg class="icon"><use href="#i-arrow-ur"/></svg></a></li>
+                    <li class="reveal feat"><button class="card cert" data-full="image14.jpg"><div class="cert-img"><img src="image14.jpg" alt="AWS Cloud Practitioner Essentials course completion certificate" loading="lazy" width="1600" height="1244"></div><div class="cert-body"><div class="cert-name">AWS Cloud Practitioner Essentials</div><div class="cert-issuer">AWS Training &amp; Certification</div></div></button></li>
+                    <li class="reveal"><button class="card cert" data-full="ai.png"><div class="cert-img"><img src="ai.png" alt="Complete Machine Learning &amp; Data Science Bootcamp 2023 certificate" loading="lazy" width="1566" height="1134"></div><div class="cert-body"><div class="cert-name">Complete Machine Learning &amp; Data Science Bootcamp 2023</div><div class="cert-issuer">Udemy</div></div></button></li>
+                    <li class="reveal"><button class="card cert" data-full="elementsofai.jpg"><div class="cert-img"><img src="elementsofai.jpg" alt="Elements of AI certificate of completion" loading="lazy" width="2786" height="1956"></div><div class="cert-body"><div class="cert-name">Elements of AI</div><div class="cert-issuer">MinnaLearn · University of Helsinki</div></div></button></li>
+                    <li class="reveal"><button class="card cert" data-full="fullstack.png"><div class="cert-img"><img src="fullstack.png" alt="Python and Django Full Stack Web Developer Bootcamp certificate" loading="lazy" width="1466" height="1086"></div><div class="cert-body"><div class="cert-name">Python and Django Full Stack Web Developer Bootcamp</div><div class="cert-issuer">Udemy</div></div></button></li>
+                    <li class="reveal"><button class="card cert" data-full="network.png"><div class="cert-img"><img src="network.png" alt="Networking Essentials certificate" loading="lazy" width="1618" height="1154"></div><div class="cert-body"><div class="cert-name">Networking Essentials</div><div class="cert-issuer">Cisco</div></div></button></li>
+                    <li class="reveal"><button class="card cert" data-full="cyber.png"><div class="cert-img"><img src="cyber.png" alt="Cybersecurity Essentials certificate" loading="lazy" width="1630" height="1164"></div><div class="cert-body"><div class="cert-name">Cybersecurity Essentials</div><div class="cert-issuer">Cisco</div></div></button></li>
+                    <li class="reveal"><button class="card cert" data-full="blueprism.png"><div class="cert-img"><img src="blueprism.png" alt="Blue Prism Foundation Training certificate of completion" loading="lazy" width="1810" height="1248"></div><div class="cert-body"><div class="cert-name">Blue Prism Foundation Training</div><div class="cert-issuer">Blue Prism University</div></div></button></li>
                 </ul>
             </div>
         </section>
@@ -1464,17 +1731,16 @@
             <div class="wrap">
                 <div class="contact reveal">
                     <div>
-                        <span class="eyebrow">06 / Contact</span>
+                        <span class="eyebrow">07 / Contact</span>
                         <h2 id="contact-title">Let's build something together.</h2>
-                        <p class="contact-lead">I'm seeking software engineering and AI/ML internships for 2026. Have a role, a project, or just want to talk AI? My inbox is open — I reply within 24 hours.</p>
+                        <p class="contact-lead">Have a role, a project, or want to talk about agents, backend systems or AI security? My inbox is open and I usually reply within a day.</p>
                         <div class="mail-row">
                             <a class="mail-btn" href="mailto:chidubemonwuchuluba1@gmail.com"><svg class="icon"><use href="#i-mail"/></svg><span>chidubemonwuchuluba1@gmail.com</span></a>
                             <button class="copy-btn" data-copy="chidubemonwuchuluba1@gmail.com"><svg class="icon"><use href="#i-copy"/></svg>Copy</button>
                         </div>
                         <ul class="contact-facts">
-                            <li><svg class="icon"><use href="#i-pin"/></svg>Atlanta, GA — open to remote</li>
-                            <li><svg class="icon"><use href="#i-case"/></svg>Seeking 2026 internships</li>
-                            <li><svg class="icon"><use href="#i-clock"/></svg>Replies within 24 hours</li>
+                            <li><svg class="icon"><use href="#i-pin"/></svg>Atlanta, GA</li>
+                            <li><svg class="icon"><use href="#i-case"/></svg>Backend · applied AI · agentic systems</li>
                         </ul>
                         <div class="contact-social">
                             <a href="https://github.com/dubemmmm" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
@@ -1613,13 +1879,13 @@
 
         /* ---------- Reveal + count-up ---------- */
         function countUp(el) {
-            var target = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), suffix = el.dataset.suffix || '';
+            var target = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), suffix = el.dataset.suffix || '', prefix = el.dataset.prefix || '';
             if (reduced) return;
             var start = null, dur = 1400;
             function step(t) {
                 if (!start) start = t;
                 var k = Math.min(1, (t - start) / dur), e = 1 - Math.pow(1 - k, 3);
-                el.textContent = (target * e).toFixed(dec) + suffix;
+                el.textContent = prefix + (target * e).toFixed(dec) + suffix;
                 if (k < 1) requestAnimationFrame(step);
             }
             requestAnimationFrame(step);
@@ -1646,15 +1912,15 @@
         var term = document.getElementById('term');
         var script = [
             ['cmd', 'whoami'],
-            ['out', 'chidubem — ai engineer, atlanta'],
+            ['out', 'chidubem · backend & applied ai engineer'],
             ['cmd', 'cat stack.txt'],
-            ['out', 'python · go · c# · k8s · aws · azure'],
-            ['cmd', 'pytest -q atrium/'],
-            ['out', '287 passed in 10.1s ✓'],
-            ['cmd', 'curl -s api/health'],
-            ['out', '{"uptime": "99.9%", "tx_per_day": "2M+"}'],
-            ['cmd', 'status --internships 2026'],
-            ['ok',  '● open to offers']
+            ['out', 'python · c# · aws · azure · k8s'],
+            ['cmd', 'ls ~/projects'],
+            ['out', 'atrium  codelens  dispatch-ai'],
+            ['out', 'code-reviewer  face-auth-defense'],
+            ['cmd', 'cat now.txt'],
+            ['out', 'building agents · researching adversarial ml'],
+            ['ok',  '● let\'s build something']
         ];
         function line(type, text) {
             if (type === 'cmd') return '<span class="p">❯</span> ' + text;
@@ -1706,7 +1972,7 @@
             btn.addEventListener('click', function () {
                 lbImg.src = btn.dataset.full;
                 lbImg.alt = btn.querySelector('img').alt;
-                lbCap.textContent = btn.querySelector('.cert-name').textContent + ' — ' + btn.querySelector('.cert-issuer').textContent;
+                lbCap.textContent = btn.querySelector('.cert-name').textContent + ' · ' + btn.querySelector('.cert-issuer').textContent;
                 lb.showModal();
             });
         });
@@ -1721,12 +1987,13 @@
             { g: 'Navigate', t: 'About', i: 'i-hash', run: go('about') },
             { g: 'Navigate', t: 'Experience', i: 'i-hash', run: go('experience') },
             { g: 'Navigate', t: 'Projects', i: 'i-hash', run: go('projects') },
+            { g: 'Navigate', t: 'Research & awards', i: 'i-hash', run: go('research') },
             { g: 'Navigate', t: 'Skills', i: 'i-hash', run: go('skills') },
             { g: 'Navigate', t: 'Education & certifications', i: 'i-hash', run: go('education') },
             { g: 'Navigate', t: 'Contact', i: 'i-hash', run: go('contact') },
             { g: 'Actions', t: 'Copy email address', i: 'i-copy', run: copyEmail },
             { g: 'Actions', t: 'Send an email', i: 'i-mail', run: function () { location.href = 'mailto:' + EMAIL; } },
-            { g: 'Actions', t: 'Download résumé', i: 'i-download', run: function () { var a = document.createElement('a'); a.href = 'cv.pdf'; a.download = ''; a.click(); } },
+            { g: 'Actions', t: 'Download résumé', i: 'i-download', run: function () { var a = document.createElement('a'); a.href = 'Master_Resume.pdf'; a.download = ''; a.click(); } },
             { g: 'Actions', t: 'Toggle dark mode', i: 'i-moon', run: toggleTheme },
             { g: 'Links', t: 'GitHub', i: 'i-github', run: open('https://github.com/dubemmmm') },
             { g: 'Links', t: 'LinkedIn', i: 'i-linkedin', run: open('https://www.linkedin.com/in/chidubem-onwuchuluba-787414227/') },
@@ -1749,6 +2016,9 @@
         function openPalette() { pInput.value = ''; sel = 0; render(); palette.showModal(); pInput.focus(); }
         function runSel(i) { var c = shown[i]; if (!c) return; palette.close(); c.run(); }
         document.getElementById('cmdOpen').addEventListener('click', openPalette);
+        if (!/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) {
+            document.querySelectorAll('.mod-key').forEach(function (k) { k.textContent = 'Ctrl'; });
+        }
         pInput.addEventListener('input', function () { sel = 0; render(); });
         pInput.addEventListener('keydown', function (e) {
             if (e.key === 'ArrowDown') { e.preventDefault(); sel = (sel + 1) % Math.max(1, shown.length); render(); }
@@ -1777,7 +2047,7 @@
                 .then(function (res) {
                     if (!res.ok) throw new Error('Request failed');
                     form.reset();
-                    status.textContent = 'Thanks — your message is on its way. I\'ll reply soon.';
+                    status.textContent = 'Thanks! Your message is on its way. I\'ll reply soon.';
                     status.classList.add('ok');
                     toast('Message sent');
                 })
@@ -1789,7 +2059,7 @@
         });
 
         console.log('%cHey there, developer 👋', 'font-size:16px;font-weight:bold');
-        console.log('%cLiked the build? Let\'s talk — ' + EMAIL, 'font-size:13px');
+        console.log('%cLiked the build? Let\'s talk: ' + EMAIL, 'font-size:13px');
     })();
     </script>
 </body>
